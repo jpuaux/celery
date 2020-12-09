@@ -7,9 +7,6 @@ app.secret_key = os.getenv('FLASK_SECRET_KEY', "super-secret")
 
 export TZ="Europe/Paris"
 
-CELERY_ENABLE_UTC = True
-CELERY_TIMEZONE = "UTC"
-
 @app.route('/')
 def main():
     return render_template('main.html')
