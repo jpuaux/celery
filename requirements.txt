@@ -1,8 +1,4 @@
-celery[redis]==4.3.0
+celery[redis]==4.4.7
 Flask
-flower
+flower==0.9.5
 gunicorn
-
-# NOTE: Kombu 4.6.5 results in a build failure. Bumping down to 4.6.4
-#       See this github issue: https://github.com/celery/kombu/issues/1063
-kombu==4.6.4
