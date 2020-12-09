@@ -5,6 +5,7 @@ from tasks import add
 app = Flask(__name__)
 app.secret_key = os.getenv('FLASK_SECRET_KEY', "super-secret")
 
+export TZ="Europe/Paris"
 
 @app.route('/')
 def main():
